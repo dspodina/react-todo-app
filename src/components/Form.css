@@ -31,11 +31,13 @@
 }
 
 .form input:hover {
-  border: none !important; 
+  border: none !important;
+  outline: none;
 }
 
 .form input:focus {
   border: none !important;
+  outline: none;
 }
 
 .error {
