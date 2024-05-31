@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import "./Todo.css";
+import { MdOutlineDelete } from "react-icons/md";
 
 const Todo = ({ todo, onToggle, onDelete }) => {
   return (
@@ -13,7 +14,7 @@ const Todo = ({ todo, onToggle, onDelete }) => {
         <span className={todo.completed ? "completed" : ""}>{todo.text}</span>
       </div>
       <div className="todo-actions">
-        <button onClick={() => onDelete(todo.id)}>Delete</button>
+      <MdOutlineDelete className="delete-btn" onClick={() => onDelete(todo.id)} />
       </div>
     </li>
   );

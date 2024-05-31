@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import uuid from "react-uuid";
 import "./Form.css";
+import { IoMdAdd } from "react-icons/io";
 
 const Form = ({ addTodo }) => {
   const [input, setInput] = useState("");
@@ -39,7 +40,7 @@ const Form = ({ addTodo }) => {
           type="text"
           onChange={changeHandler}
         />
-        <button type="submit">Add</button>
+        <button type="submit"><IoMdAdd /></button>
       </form>
       {error && <div className="error">You need to write something</div>}
     </>

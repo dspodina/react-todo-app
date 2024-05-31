@@ -30,8 +30,12 @@
   transition: background-color 0.3s ease;
 }
 
-.form button:hover {
-  background-color: #35e9ce;
+.form input:hover {
+  border: none !important; 
+}
+
+.form input:focus {
+  border: none !important;
 }
 
 .error {
