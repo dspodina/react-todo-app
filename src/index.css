@@ -1,0 +1,27 @@
+:root {
+  --violet-color: #453c7c;
+  --light-violet-color: #e5e8fa;
+  --green-color: #a3ffd6;
+  --light-green-color: #008f77;
+  --black-color: #282343;
+}
+
+a {
+  font-weight: 500;
+  color: var(--green-color);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--light-green-color);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--violet-color);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
